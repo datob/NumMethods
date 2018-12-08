@@ -31,17 +31,16 @@ using System.Threading.Tasks;
 	} 
 	
 	//Console.ReadKey(); 
-  Console.WriteLine(); 
+  	Console.WriteLine(); 
 	Console.Write(" MaxM = " +max); 
 } 
 } 
 
 
 
-
 class Vector 
 { 
-		public void Inversion(int n,ref int[] C) 
+	public void Inversion(int n,ref int[] C) 
 { 
 
 	int[] L = new int[n + 1]; 
@@ -49,18 +48,17 @@ class Vector
 	for (int i = 0; i < n + 1; i++) { C[i] = L[i]; } 
 } 
 
- public int Max(int[] array)       // функция Max которая будет искать максимальный элемент - Int перед названием означает, что функция в качестве результата вернет целочисленное значение - в параметрах передаем массив
+ 	public int Max(int[] array)       // функция Max которая будет искать максимальный элемент - Int перед названием означает, что функция в качестве результата вернет целочисленное значение - в параметрах передаем массив
         {
-            int max = array[0];        // присваиваем переменной max значение первого элемента массива  
-            for (int i = 0; i < array.Count(); i++) // делам цикл перебора всех элементов массива
+        int max = array[0];        // присваиваем переменной max значение первого элемента массива  
+        for (int i = 0; i < array.Count(); i++) // делам цикл перебора всех элементов массива
             {
                 if (max < array[i])    // если текущий элемент больше переменной max
                 {
-                    max = array[i];  // присваиваем переменной max значение текущего элемента
+                max = array[i];  // присваиваем переменной max значение текущего элемента
                 }
             }
                 return max;    // возвращаем значение max
         }
-
 } 
 }
